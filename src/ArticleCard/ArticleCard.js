@@ -4,10 +4,13 @@ import './ArticleCard.css'
 const ArticleCard = ({abstract, section, image}) => {
   return (
     <div className='article-card'>
+      <div className='category-holder'>
+        <p>{section}</p>
+      </div>
       <p>{abstract}</p>
-      <p>{section}</p>
       <img src={image} />
     </div>
+  
   )
 }
 
