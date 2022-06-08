@@ -12,7 +12,7 @@ const AllArticles = ({ articles }) => {
         url={article.web_url}
         key={i}
         //id={article.id}
-        image={article.multimedia[0].url}
+        //image={article.multimedia[0].url}
       />
       </Link>
     )
