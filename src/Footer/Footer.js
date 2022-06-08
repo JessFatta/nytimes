@@ -1,5 +1,3 @@
-
-   
 import React from "react"
 import "./Footer.css"
 
@@ -9,7 +7,7 @@ const Footer = () => {
     <footer>
       <p className="footer-text">©2022 Da Times by Jess Fatta</p>
       <p className="footer-text">|</p>
-      <p className="footer-text">Real News, Fake Site</p>
+      <p className="footer-text">Very Real News, Very Fake Site</p>
     </footer>
   )
 }
