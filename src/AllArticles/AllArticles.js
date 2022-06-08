@@ -1,21 +1,25 @@
 import React from 'react'
 import ArticleCard from '../ArticleCard/ArticleCard'
+import { Link } from "react-router-dom";
 
 const AllArticles = ({ articles }) => {
-  const articleCards = articles.map(article => {
+  const articleCards = articles.map((article, i) => {
     return (
+      <Link to={`/${i}`}>
       <ArticleCard 
-        paragraph={article.lead_paragraph}
+        abstract={article.headline.main}
         section={article.subsection_name}
         url={article.web_url}
-        key={article.id}
-        id={article.id}
+        key={i}
+        //id={article.id}
+        image={article.multimedia[0].url}
       />
+      </Link>
     )
   })
 
   return (
-    <div>
+    <div className='article-cards-container'>
       {articleCards}
     </div>
   )
