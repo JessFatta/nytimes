@@ -5,7 +5,9 @@ import CurrentArticle from '../CurrentArticle/CurrentArticle'
 import { Route } from 'react-router-dom'
 import Footer from '../Footer/Footer'
 import Header from '../Header/Header'
+import FilteredArticles from '../FilteredArticles/FilteredArticles'
 import './App.css'
+import { toHaveDisplayValue } from '@testing-library/jest-dom/dist/matchers'
 
 
 class App extends Component {
@@ -14,7 +16,9 @@ class App extends Component {
     this.state = {
       articles: [],
       currentArticle: '',
-      error: null
+      error: null,
+      filteredSections: [],
+      selectedSection: null
     }
   }
 
@@ -24,13 +28,28 @@ class App extends Component {
     .catch(error => this.setState({error: error}))
   }
 
+  getSections = (section) => {
+    if (section === 'All') {
+      this.setState({filteredSections: this.state.articles, selectedSection: null })
+      return 
+    }
+
+    const filtered = this.state.articles.filter(article => article.subsection_name.includes(section))
+    this.setState({filteredSections: filtered, selectedSection: section})
+  }
+
   render() {
     return (
       <div className='main'>
-      <Header />
+      <Header getSections={this.getSections} />
+      
       <Route exact path='/' render={() => {
         return (
-          <AllArticles articles={this.state.articles} />
+          <div>
+            {this.state.selectedSection ?
+            <FilteredArticles section={this.state.selectedSection} filteredArticles={this.state.filteredSections} /> :
+            <AllArticles articles={this.state.articles} /> }
+          </div>
         )
       }} />
         <Route exact path='/:id' render={(match) => {
