@@ -3,6 +3,7 @@ import { getArticles } from '../apiCalls'
 import AllArticles from '../AllArticles/AllArticles'
 import CurrentArticle from '../CurrentArticle/CurrentArticle'
 import { Route } from 'react-router-dom'
+import Footer from '../Footer/Footer'
 import './App.css'
 
 
@@ -25,7 +26,7 @@ class App extends Component {
   render() {
     return (
       <div className='main'>
-        <h1>NY Times</h1>
+        <h1>Da Times</h1>
       <Route exact path='/' render={() => {
         return (
 
@@ -38,6 +39,7 @@ class App extends Component {
           <CurrentArticle details={this.state.articles[match.match.params.id]} />
           )
         }} />
+      <Footer/>
       </div>
     )
   }
