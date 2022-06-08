@@ -1,5 +1,8 @@
 .details-view {
-  border: 1px solid red;
+  border: 5px solid rgb(155, 177, 177);
+  border-radius: 10px;
   background-color: azure;
-  height: 100vh;
+  padding: 2rem;
+  margin: 1.5rem;
+  height: 80vh;
 }
