@@ -1,10 +1,17 @@
 import React from 'react'
 import './Header.css'
+import { Link } from 'react-router-dom'
+import FilterForm from '../FilterForm/FilterForm'
 
-const Header = () => {
+const Header = ({getSections}) => {
   return (
     <div className='header'>
-      <h1>Da Times</h1>
+      <Link to='/'>
+        <h1>Da Times</h1>
+      </Link>
+      <div className='drop-down'>
+      <FilterForm getSections={getSections} />
+      </div>
     </div>
   )
 }
