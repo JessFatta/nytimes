@@ -1,3 +1,9 @@
 .article-card {
   border: 1px solid blue;
+  background-color: azure;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  margin: 1.5rem;
+  cursor: pointer;
 }
