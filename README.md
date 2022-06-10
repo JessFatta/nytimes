@@ -2,7 +2,7 @@
 -------
 ### Overview
 
-Da Times is the final deliverable of Turing's Mod 4 inning. This project was completed in 8 hours and was supposed to mock a take home assessment that would be given as part of an interview in the real world. The expectation for this project was to consume the New York Times API in order to display the articles' headlines as well as a detailed view of each article. Additionally, other expectations were to have a filtering functionality as well as responsive design. 
+Da Times is the final deliverable of Turing's Mod 4 inning. This project was completed in 8 hours and was supposed to mock a take home assessment that would be given as part of an interview in the real world. The expectation for this project was to consume the [New York Times API](https://developer.nytimes.com/docs/articlesearch-product/1/overview) in order to display the articles' headlines as well as a detailed view of each article. Additionally, other expectations were to have a filtering functionality as well as responsive design. 
 
 This was a solo [project](https://mod4.turing.edu/projects/take_home/take_home_fe) and is built using React, React Router, JavaScript, and CSS. This project was meant to display ability of wrting clean code to solve a problem with an understanding of basic UX. Nothin' too fancy.
 
