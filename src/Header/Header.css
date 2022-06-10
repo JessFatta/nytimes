@@ -18,3 +18,19 @@
   display: flex;
   align-items: center;
 }
+
+a :hover {
+  transition: 0.3s;
+  transform: scale(1.02);
+}
+
+.header > a :hover {
+  transition: 0.3s;
+  transform: scale(1.06);
+}
+
+
+select {
+  border-radius: 50px;
+  background-color: azure;
+}
