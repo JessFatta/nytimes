@@ -4,5 +4,18 @@
   background-color: azure;
   padding: 2rem;
   margin: 1.5rem;
-  height: 80vh;
+  height: 100vh;
+}
+
+.read-more-button {
+  border-radius: 50px;
+  border: none;
+  background-color: rgb(155, 177, 177);
+  height: 1.5rem;
+  width: 10rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
 }
