@@ -11,8 +11,6 @@ const AllArticles = ({ articles }) => {
         section={article.subsection_name}
         url={article.web_url}
         key={i}
-        //id={article.id}
-        //image={article.multimedia[0].url}
       />
       </Link>
     )
