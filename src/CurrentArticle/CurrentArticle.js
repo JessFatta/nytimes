@@ -8,7 +8,7 @@ const CurrentArticle = ({details}) => {
       <p>{details.byline.original}</p>
       <p>{details.abstract}</p>
       <p>{details.lead_paragraph}</p>
-      <a href={details.web_url}>Click to read full article</a>
+      <button className='read-more-button'><a href={details.web_url}>Click to read full article</a></button>
     </div>
   )
 }
