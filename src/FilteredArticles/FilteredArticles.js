@@ -9,15 +9,13 @@ const FilteredArticles = ({filteredArticles, section}) => {
         section={article.subsection_name}
         url={article.web_url}
         key={article._id}
-        //id={article.id}
-        //image={a
         />
     )
   })
 
   return (
     <div className='filtered-articles-container'>
-    {filteredArticlesCards}
+      {filteredArticlesCards}
     </div>
   )
 }
