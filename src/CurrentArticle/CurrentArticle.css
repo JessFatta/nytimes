@@ -19,3 +19,8 @@ a {
   color: white;
   text-decoration: none;
 }
+
+.read-more-button:hover {
+  transition: 0.3s;
+  transform: scale(1.05);
+}
