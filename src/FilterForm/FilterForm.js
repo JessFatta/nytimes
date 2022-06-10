@@ -1,5 +1,4 @@
 import React from 'react'
-import './FilterForm.css'
 
 const FilterForm = ({getSections}) => {
   const handleChange = (section) => {
