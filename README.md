@@ -12,7 +12,15 @@ This was a solo [project](https://mod4.turing.edu/projects/take_home/take_home_f
 - The user can select an article which will take them to a new page that displays the articles's details
 - At any time, the user can click the page title to return to the homepage
 
+Home Page:
 
+![](https://media.giphy.com/media/eBxyWBmRSHVAJkCeP9/giphy.gif)
+
+
+
+Filtering: 
+
+![](https://media.giphy.com/media/Amn0AgdiD1bGkXxffw/giphy.gif)
 
 ---------
 ### Installation Instructions
