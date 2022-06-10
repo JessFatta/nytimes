@@ -6,12 +6,12 @@ const AllArticles = ({ articles }) => {
   const articleCards = articles.map((article, i) => {
     return (
       <Link to={`/${i}`}>
-      <ArticleCard 
-        abstract={article.headline.main}
-        section={article.subsection_name}
-        url={article.web_url}
-        key={i}
-      />
+        <ArticleCard 
+          abstract={article.headline.main}
+          section={article.subsection_name}
+          url={article.web_url}
+          key={i}
+        />
       </Link>
     )
   })
