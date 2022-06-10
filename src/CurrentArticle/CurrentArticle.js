@@ -9,7 +9,6 @@ const CurrentArticle = ({details}) => {
       <p>{details.abstract}</p>
       <p>{details.lead_paragraph}</p>
       <a href={details.web_url}>Click to read full article</a>
-      {/* <img src={details.multimedia[0].url} /> */}
     </div>
   )
 }
