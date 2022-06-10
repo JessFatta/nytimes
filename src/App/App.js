@@ -7,7 +7,6 @@ import Footer from '../Footer/Footer'
 import Header from '../Header/Header'
 import FilteredArticles from '../FilteredArticles/FilteredArticles'
 import './App.css'
-import { toHaveDisplayValue } from '@testing-library/jest-dom/dist/matchers'
 
 
 class App extends Component {
@@ -30,7 +29,7 @@ class App extends Component {
 
   getSections = (section) => {
     if (section === 'All') {
-      this.setState({filteredSections: this.state.articles, selectedSection: null })
+      this.setState({filteredSections: this.state.articles, selectedSection: null})
       return 
     }
 
@@ -42,7 +41,6 @@ class App extends Component {
     return (
       <div className='main'>
       <Header getSections={this.getSections} />
-      
       <Route exact path='/' render={() => {
         return (
           <div>
@@ -52,11 +50,11 @@ class App extends Component {
           </div>
         )
       }} />
-        <Route exact path='/:id' render={(match) => {
-          return (
+      <Route exact path='/:id' render={(match) => {
+        return (
           <CurrentArticle details={this.state.articles[match.match.params.id]} />
-          )
-        }} />
+        )
+      }} />
       <Footer/>
       </div>
     )
