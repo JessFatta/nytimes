@@ -52,6 +52,7 @@ class App extends Component {
         )
       }} />
       <Route exact path='/:id' render={(match) => {
+        console.log(match)
         return (
           <CurrentArticle details={this.state.articles[match.match.params.id]} />
         )
