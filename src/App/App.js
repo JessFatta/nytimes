@@ -14,7 +14,6 @@ class App extends Component {
     super()
     this.state = {
       articles: [],
-      currentArticle: '',
       error: null,
       filteredSections: [],
       selectedSection: null
@@ -40,24 +39,23 @@ class App extends Component {
   render() {
     return (
       <div className='main'>
-      <Header getSections={this.getSections} />
-      {this.state.error && <h2 className='loading-error-message'>{this.state.error.message}</h2>}
-      <Route exact path='/' render={() => {
-        return (
-          <div>
-            {this.state.selectedSection ?
-            <FilteredArticles section={this.state.selectedSection} filteredArticles={this.state.filteredSections} /> :
-            <AllArticles articles={this.state.articles} /> }
-          </div>
-        )
-      }} />
-      <Route exact path='/:id' render={(match) => {
-        console.log(match)
-        return (
-          <CurrentArticle details={this.state.articles[match.match.params.id]} />
-        )
-      }} />
-      <Footer/>
+        <Header getSections={this.getSections} />
+        {this.state.error && <h2>{this.state.error.message}</h2>}
+        <Route exact path='/' render={() => {
+          return (
+            <div>
+              {this.state.selectedSection ?
+              <FilteredArticles section={this.state.selectedSection} filteredArticles={this.state.filteredSections} /> :
+              <AllArticles articles={this.state.articles} /> }
+            </div>
+          )
+        }} />
+        <Route exact path='/:id' render={(match) => {
+          return (
+            <CurrentArticle details={this.state.articles[match.match.params.id]} />
+          )
+        }} />
+        <Footer/>
       </div>
     )
   }
