@@ -41,6 +41,7 @@ class App extends Component {
     return (
       <div className='main'>
       <Header getSections={this.getSections} />
+      {this.state.error && <h2 className='loading-error-message'>{this.state.error.message}</h2>}
       <Route exact path='/' render={() => {
         return (
           <div>
