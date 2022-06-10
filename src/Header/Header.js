@@ -10,7 +10,7 @@ const Header = ({getSections}) => {
         <h1>Da Times</h1>
       </Link>
       <div className='drop-down'>
-      <FilterForm getSections={getSections} />
+        <FilterForm getSections={getSections} />
       </div>
     </div>
   )
