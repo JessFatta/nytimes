@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Da Times
+-------
+### Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Da Times is the final deliverable of Turing's Mod 4 inning. This project was completed in 8 hours and was supposed to mock a take home assessment that would be given as part of an interview in the real world. The expectation for this project was to consume the New York Times API in order to display the articles' headlines as well as a detailed view of each article. Additionally, other expectations were to have a filtering functionality as well as responsive design. 
 
-## Available Scripts
+This was a solo [project](https://mod4.turing.edu/projects/take_home/take_home_fe) and is built using React, React Router, JavaScript, and CSS. This project was meant to display ability of wrting clean code to solve a problem with an understanding of basic UX. Nothin' too fancy.
 
-In the project directory, you can run:
 
-### `npm start`
+- The user can visit the home page to view all the articles at once 
+- The user can also use the dropdown menu and select a specific section which will display all articles of that section
+- The user can select an article which will take them to a new page that displays the articles's details
+- At any time, the user can click the page title to return to the homepage
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+---------
+### Installation Instructions
+ - Fork and Clone [this](https://github.com/JessFatta/nytimes) repository
+ - `CD` into the directory
+ - Run `npm install` 
+ - Run `npm start`
+ - In your browser, go to [this link](http://localhost:3000/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---------
 
-### `npm run build`
+### Contributors
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Jessica Fatta | [GitHub](https://github.com/JessFatta)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+--------
+### Links
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Repository Link: [📰](https://github.com/JessFatta/nytimes)
 
-### `npm run eject`
+------------
+### Technologies Used
+ This application was built using React, React Router, JavaScript, and CSS.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+------------
+### Learning Goals
+To solidify and demonstrate the understanding of:
+- Building an application using React and Front-End best practices
+- Creating a multi-page application with React Router that changes the URL for a better user experience
+- Ability to priortize for MVP
+- An understanding of basic usability practices and standards
+- A clear hierarchy of information
+- Clean, well thought out code
